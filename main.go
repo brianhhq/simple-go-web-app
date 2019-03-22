@@ -6,10 +6,12 @@ import (
 	"net/http"
 )
 
+func myHandleFunc(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Hey!, you've requested: %s", r.URL.Path)
+}
+
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hey!, you've requested: %s\n", r.URL.Path)
-	})
+	http.HandleFunc("/", myHandleFunc)
 
 	defaultPort := "8080"
 	log.Printf("Listening on default port: %s", defaultPort)
