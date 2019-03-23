@@ -1,0 +1,5 @@
+aws_region = "ap-northeast-1"
+cidr_block = "172.32.0.0/16"
+purpose = "Test By Brian"
+environment = "Production"
+owner = "brian"
