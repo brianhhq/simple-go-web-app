@@ -26,6 +26,7 @@ resource "aws_subnet" "public" {
     Tier                  = "Public"
     Environment           = "${var.environment}"
     Owner                 = "${var.owner}"
+    Purpose               = "${var.purpose}"
   }
 }
 

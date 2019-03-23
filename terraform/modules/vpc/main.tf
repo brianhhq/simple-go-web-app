@@ -5,6 +5,7 @@ resource "aws_vpc" "default" {
     Name                    = "${var.purpose} VPC"
     Environment             = "${var.environment}"
     Owner                   = "${var.owner}"
+    Purpose               = "${var.purpose}"
   }
 }
 
@@ -14,5 +15,6 @@ resource "aws_internet_gateway" default {
     Name                    = "${var.purpose} IG"
     Environment             = "${var.environment}"
     Owner                   = "${var.owner}"
+    Purpose               = "${var.purpose}"
   }
 }

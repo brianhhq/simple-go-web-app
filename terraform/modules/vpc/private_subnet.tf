@@ -9,6 +9,7 @@ resource "aws_subnet" "private" {
     Tier                    = "Private"
     Environment             = "${var.environment}"
     Owner                   = "${var.owner}"
+    Purpose               = "${var.purpose}"
   }
 }
 
@@ -26,6 +27,7 @@ resource "aws_route_table" "private" {
     Tier                    = "Private"
     Environment             = "${var.environment}"
     Owner                   = "${var.owner}"
+    Purpose               = "${var.purpose}"
   }
 }
 

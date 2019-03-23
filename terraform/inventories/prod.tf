@@ -1,5 +1,6 @@
 aws_region = "ap-northeast-1"
-cidr_block = "172.32.0.0/16"
+cidr_block = "10.20.0.0/16"
 purpose = "Test By Brian"
 environment = "Production"
 owner = "brian"
+vpc_id = "vpc-0ad5a4e3ab673aaf2"

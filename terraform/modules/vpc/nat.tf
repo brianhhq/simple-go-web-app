@@ -5,6 +5,7 @@ resource "aws_eip" "default" {
     Name            = "NAT GW ${element(var.availability_zones, count.index)} for ${var.purpose}"
     Environment     = "${var.environment}"
     Owner           = "${var.owner}"
+    Purpose               = "${var.purpose}"
   }
 }
 
