@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-go-web-app
+  labels:
+    app: simple-go-web-app
+spec:
+  ports:
+  - port: 80
+    targetPort: http-server
+  selector:
+    app: simple-go-web-app
+  type: LoadBalancer
