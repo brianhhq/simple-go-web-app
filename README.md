@@ -70,4 +70,4 @@ docker stop simple-go-web-app && docker rm simple-go-web-app
 ```
 
 ## Deployment
-see [deployment/README.md]()
+see [deployment/README.md](deployment/README.md)
