@@ -19,7 +19,7 @@ func TestMain(t *testing.T) {
 	rr := httptest.NewRecorder()
 	handler := http.HandlerFunc(myHandleFunc)
 
-	// Our handlers satisfy http.Handler, so we can call their ServeHTTP method 
+	// Our handlers satisfy http.Handler, so we can call their ServeHTTP method
     // directly and pass in our Request and ResponseRecorder.
 	handler.ServeHTTP(rr, req)
 
@@ -30,7 +30,7 @@ func TestMain(t *testing.T) {
     }
 
 	// Check the response body is what we expect.
-    expected := `Hey!, you've requested: /`
+    expected := `Hey!, you've requested v2: /`
     if rr.Body.String() != expected {
         t.Errorf("handler returned unexpected body: got %v want %v",
             rr.Body.String(), expected)

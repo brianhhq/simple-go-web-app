@@ -7,7 +7,7 @@ import (
 )
 
 func myHandleFunc(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hey!, you've requested: %s", r.URL.Path)
+		fmt.Fprintf(w, "Hey!, you've requested v2: %s", r.URL.Path)
 }
 
 func main() {
