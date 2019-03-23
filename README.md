@@ -1,3 +1,5 @@
+| Branch | Build Status |
+| Master | [![CircleCI](https://circleci.com/gh/brianhhq/simple-go-web-app.svg?style=svg)](https://circleci.com/gh/brianhhq/simple-go-web-app) |
 # Simple Go Web App
 The purpose of this project demos how simple go application work.
 
