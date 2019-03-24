@@ -71,3 +71,13 @@ docker stop simple-go-web-app && docker rm simple-go-web-app
 
 ## Deployment
 see [deployment/README.md](deployment/README.md)
+
+### Highlight of the project
+
+* [CI] Continuous Integration has been applied in this repo. CircleCI is chosen to be the CI tools to make sure building stuff faster, never shipping broken code and decreasing code review time.
+* [Process Improvement]  Build caching mechanism has been considered to reduce the amount of building time.
+* [Dockerization] Docker is chosen as a artifact as it increases CI Efficiency, simplifying configurations and ensures rapid deployment. It is also good to ship product across platform easily. 
+* [Performance] The principle of minimum packages/images has been considered to ensure shipping smallest but functional application over low-bandwidth connection network.
+* [Documentation] Documentation has been provided to make it easy for a user to run this program. Github integrates with CircleCI to quickly check the status of build status.
+* [Unit Testing] Unit testing has been applied to ensure quality of code and find bugs earlier and easier.
+* [Security] Branch protection rule(Signed Commit) has been applied. Commits pushed to matching branches must have [verified signatures](https://help.github.com/articles/signing-commits-using-gpg/) to ensure no one can pretend someone to commit. This is very important to large organisations with a lot of engineers. 
