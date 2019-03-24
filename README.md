@@ -76,6 +76,7 @@ see [deployment/README.md](deployment/README.md)
 ### Highlight of the project
 * [Infrastructure] Public subnets and private subnets have been created across multiple available zones. Multiple Nat gateways have also been creted for high availablity.
 * [EKS] One Master control plane and workers autoscaling group have been created to make sure high avaliablity and self healing.
+* [High Availablity and Seal Healing] Applications deployed in EKS automatically handled by EKS to make sure applciation high avilability across multiple available zones and self healing.
 * [CI] Continuous Integration has been applied in this repo. CircleCI is chosen to be the CI tools to make sure building stuff faster, never shipping broken code and decreasing code review time.
 * [Process Improvement]  Build caching mechanism has been considered to reduce the amount of building time.
 * [Dockerization] Docker is chosen as a artifact as it increases CI Efficiency, simplifying configurations and ensures rapid deployment. It is also good to ship product across platform easily. 
